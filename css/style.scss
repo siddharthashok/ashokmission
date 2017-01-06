@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:700');
+
+// Mixins
+
+
+@mixin vertical-center() {display: flex; align-items: center; justify-content: center;}
+
+
+body {background: #FEDCCC; color: #19227D; font-family: 'Roboto', sans-serif;}
+
+p {font-size: 28px; line-height: 46px; color: #19227D; margin-bottom: 30px;}
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Roboto Condensed', sans-serif; color: #19227D;}
+
+.row {max-width: 940px;}
+.column, .columns {padding-right: 15px; padding-left: 15px;}
+
+.title {font-size: 48px; line-height: normal; margin-bottom: 30px; text-transform: uppercase;}
+.subtitle {font-size: 36px; line-height: normal; margin-bottom: 15px;}
+
+.center {text-align: center;}
+
+header {padding: 60px 0px 0px 0px; margin-bottom: 120px;}
+
+#intro {padding:0px; margin-bottom: 90px;}
+
+#stats {height: 500px; width: 100%; background-image: url("../img/cover.jpg"); background-size: cover; background-position: center; margin-bottom: 120px; color: #ffffff;
+
+}
+
+#about {padding: 0px 0px; margin-bottom: 90px;}
+
+#weworkwith {padding: 0px 0px; margin-bottom: 90px;}
+
+#initiatives { margin-bottom: 120px;
+  .init-block {background-size: cover; background-position: center; width: 100%; position: relative; height: 280px; z-index: 1; margin-bottom: 30px;
+    &:after {content: ""; position: absolute; width: 100%; height: 100%; left: 0px; top: 0px; background: #19227D; opacity: 0.6; z-index: -1;}
+    .text-wrap {position: absolute; width: 100%; bottom: 0px; padding: 0px 30px 30px 30px;
+      .subtitle {color: #ffffff; margin-bottom: 0px;}
+      p {color: #ffffff; font-size: 18px; line-height: 28px; margin: 0px; max-width: 600px;}
+    }
+  }
+  .ashokmissionschool {background-image: url("../img/ashokmissionschool.jpg");}
+}
+
+footer {min-height: 500px; background-image: url("../img/footer.png"); background-repeat: no-repeat; background-position: bottom right;}
