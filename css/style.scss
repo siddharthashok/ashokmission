@@ -12,6 +12,8 @@ p {font-size: 28px; line-height: 46px; color: #19227D; margin-bottom: 30px;}
 
 h1, h2, h3, h4, h5, h6 {font-family: 'Roboto Condensed', sans-serif; color: #19227D;}
 
+a.link {color: #19227D; border-bottom: 1px dotted #19227D; text-transform: uppercase; font-size: 26px;}
+
 .row {max-width: 940px;}
 .column, .columns {padding-right: 15px; padding-left: 15px;}
 
@@ -20,9 +22,12 @@ h1, h2, h3, h4, h5, h6 {font-family: 'Roboto Condensed', sans-serif; color: #192
 
 .center {text-align: center;}
 
-header {padding: 60px 0px 0px 0px; margin-bottom: 120px;}
+.full.reveal {padding-top: 50px; padding-bottom: 50px;}
+.close-button {color: #19227d; font-size: 50px; padding: 0px 15px 10px;}
 
-#intro {padding:0px; margin-bottom: 90px;}
+header {padding: 60px 0px 60px 0px; height: 306px;}
+
+#intro {padding:0px; margin-bottom: 90px; height: calc(100vh - 306px); @include vertical-center;}
 
 #stats {height: 500px; width: 100%; background-image: url("../img/cover.jpg"); background-size: cover; background-position: center; margin-bottom: 120px; color: #ffffff;
 
@@ -43,4 +48,6 @@ header {padding: 60px 0px 0px 0px; margin-bottom: 120px;}
   .ashokmissionschool {background-image: url("../img/ashokmissionschool.jpg");}
 }
 
-footer {min-height: 500px; background-image: url("../img/footer.png"); background-repeat: no-repeat; background-position: bottom right;}
+footer {min-height: 500px; background-image: url("../img/footer.png"); background-repeat: no-repeat; background-position: bottom right;
+  p {font-size: 24px; line-height: 32px; margin-bottom: 15px;}
+}
